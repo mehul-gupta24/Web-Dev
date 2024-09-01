@@ -1,0 +1,39 @@
+HTML
+
+
+1)html ke 2 children hai head and body
+
+2)h1=heading
+	p=paragraph
+
+open from link source , your website will be created
+
+3) head and body are siblings
+
+4)h1 and p are children of body(not always)
+
+5)we can also use .htm or .html extension(can name file as .htm also)(but use .html in general)
+
+6)we can use "Inspect element" or "view page source" option from chrome to look into a website HTML code
+
+	HTML element = short tag + content + end tag
+
+7)<h1>bvuirfrnifori</h1>
+
+	1st h1 was opening tag and second tag was closing tag
+
+8)comments in html are used by <!--comment-->
+
+9)it is a case sensitive language
+
+<H1> AND <h1> are the same
+
+10)attributes-      we can add link to website by using " a "  then enter and then url of link should be pasted there.
+
+	<a href="https://read.kindle.in">Click Here</a>
+			single or double quotes we can usje
+
+11)for doing the size big or small of some heading we dont use heading,we just use in case
+
+12)
+
