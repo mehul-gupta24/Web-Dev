@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+*{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 3px;
+    padding: 0px;
+}
+.box{
+    color: rgb(92, 222, 92);
+}
+.box1{
+    background-color: red;
+    border: 2px solid rgb(136, 136, 54);
+    height: 80px;
+    width: 150px;
+    box-sizing: border-box;
+    /* means border or padding ko include karke hai ye ,margin excluded hai  */
+}
+.box2{
+    background-color: darkgreen;
+    width: 150px;
+    height: 80px;
+    border: 3px solid gray;
+    box-sizing: border-box;
+    /* matlab ki border and padding milake likhi gayi dimensions hai ye , margin ko nahi ginte hai isme */
+}
+/* margin collapse concept
+1)if 2 margin is collapsing then it will take the maxinmum margin in between the two 
+
+like 35px in upper one is the margin given and in bottom 25px is given then between the two borders the gap would be 35 px not (35+22)px
+*/
+div{
+    font-family: 'Honk', system-ui;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-style: oblique;
+    font-weight:900;
+    text-decoration: underline;
+    font-size: 35px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+
+}
+p{
+    font-size: 76px;
+}
+h1{
+    text-transform:capitalize;
+    /* text-transform: lowercase; */
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    /* text-transform: lowercase; */
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+
+}
+article{
+    border: 2px solid red;
+    width: 100px;
+    word-break: break-all;
+}

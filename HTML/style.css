@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(57, 12, 119);
+    color: yellow;
+}
+td{
+    border: 2px solid white;
+}
+h4{
+    color: black;
+}
+p{
+    background-color: blue;
+}
+a{
+    background-color: aqua;
+}
+/* dot is used for class */
+.firstclass{
+    background-color: black;
+}
+/* hash is used for id */
+#red{
+    color: rgb(189, 127, 51);
+}

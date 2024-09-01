@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+
+        position: sticky;
+        top: 0px;
+    }
+    .container{
+        display: flex;
+        width: 100vw;
+        background-color: aqua;
+        gap: 550px;
+        font-size: 25px;
+        height: 50px;
+    }
+    /* .nav{
+        padding: 10px;
+        margin: 10px;
+    } */
+    .main{
+        width: 100vw;
+        height: 140vh;
+        display: grid;
+        /* border: 2px solid red; */
+        /* grid-template-rows:1000px; */
+        grid-template-columns: 50vw 50vw;
+    }
+    .box{
+        /* border: 2px solid black; */
+        background-color: aquamarine;
+    }
+    .box-2{
+        background-color: bisque;
+    }
+    .end{
+        background-color: rgb(224, 170, 170);
+        height: 50px;
+        position: fixed;
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav">Home</div>
+                <div class="nav">About</div>
+                <div class="nav">Contact Us</div>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="box">Main content</div>
+        <div class="box box-2">Another box</div>
+    </div>
+    <div class="end" >
+        Footer
+    </div>
+</body>
+</html>

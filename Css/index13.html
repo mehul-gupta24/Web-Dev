@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSC Transform</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            border: 2px solid rgb(33, 31, 33);
+            background-color: red;
+            color: rgb(23, 63, 63);
+            
+        }
+        .box{
+            background-color: rgb(235, 126, 126);
+            border: 2px solid blue;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+            /* transform: rotate(0.125turn); */
+            /* transform: rotateZ(30deg); */
+            /* transform: scale(1.7); */
+            /* transform: scaleX(1.2); */
+            /* transform: scaleY(1.5); */
+            /* transform: scaleZ(1000); */
+            /* transform: skew(deg); */
+            /* transform: skewX(88deg); */
+            /* transform: skewY(45deg); */
+            /* transform: translateX(100px); */
+            /* transform: translateY(100%); */
+            /* transform: translateZ(312px); */
+            /* transform: translateX(100%) translateY(30px); */
+            /* transform-origin: 100% 100%; */
+            /* now it will rotate about other end point */
+            transform: rotate(90deg);
+            /* without transform origin prop ,it rotates about origin */
+            display: flex;
+            align-items: centre;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Container -->
+        <div class="box">
+            BOX
+        </div>
+    </div>
+</body>
+</html>

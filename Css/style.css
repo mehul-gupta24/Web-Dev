@@ -1,0 +1,56 @@
+div{
+    background-color: aqua;
+}
+/* Class selector */
+.red{
+    background-color: orange;
+}
+/* ID selector */
+#green{
+    background-color: green;
+}
+/* child selector */
+/* isme just div ke baad he p aana chahiye tab hi hoga valid */
+div > p {
+    background-color: rgb(231, 177, 123);
+    color: blueviolet;
+}
+/* Descendate selector */
+/* descendate is more prioritize than child selector */
+/* div ke ander p hai */
+div p {
+    background-color: rgb(215, 39, 39);
+}
+/* Universal Selector */
+*{
+    margin: 3px;
+    padding: 0px;
+}
+/* Pseudo Selector for anchor tag
+for visited website */
+a:visited{
+    color: red;
+}
+/* for unvisited website */
+a:link{
+    color: aqua;
+}
+/* just before clicking */
+a:hover{
+    background-color: brown;
+    color: blanchedalmond;
+}
+/* When clicking at that time */
+a:active{
+    color: black;
+    background-color: aqua;
+}
+/* p:hover{
+    color: white;
+} */
+
+/* If p is the first child of its parent , then apply this property */
+p:first-child{
+    color: green;
+    background-color: aqua;
+}

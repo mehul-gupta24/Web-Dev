@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <style>
+        *{
+            font-size: 70px;
+            padding: var(--d);
+            margin: var(--defmar);
+            opacity: var(--defop);
+        }
+        :root{
+            --color: rgb(179, 245, 73);
+            --back: rgb(11, 11, 233);
+            --defpad: 0px;  
+            /* means default padding */
+            --defmar: 0px;
+            --defop:0.5;
+            /* default opacity */
+        }
+        
+        /* media query */
+        @media only screen and (max-width: 445px){
+            body{
+                background-color: purple;
+            }
+        }
+        div{
+            color: var(--color);
+            background-color: var(--back);
+        }
+    </style>
+</head>
+<body>
+    <div>Hello</div>
+</body>
+</html>

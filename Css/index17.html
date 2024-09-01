@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        display: grid;
+        height: 15vh;
+        width: 100vw;
+        /* background-color: aqua;
+        border: 3px solid black; */
+    }
+    .items{
+        padding: 35px;
+        grid-row: 1;
+        font-size: 20px;
+    }
+    .item-1{
+        padding: 20px;
+        width:400px;
+        height: 20px;
+        transform: translateX(40px);
+        transform: scale(0.7);
+    }
+    .main{
+        padding: 120px;
+        margin: -80px;
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px 200px;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-gap:2cap;
+    }
+    .box{
+        background-color: rgb(245, 245, 241);
+        
+    }
+    .box{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    .main a{
+        background-color: rgb(65, 173, 65);
+        font-size: 15px;
+        color: white;
+        width: 120px;
+        height: 30px;
+        border-radius: 6px;
+        display: grid;
+        align-items: center;
+        justify-items:center ;
+        text-decoration: none;
+    }
+    .heading{
+        padding: 50px;
+        height: 250px;
+    }
+    .first{
+        font-size: 50px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    .second{
+        height: 45px;
+        font-size: 25px;
+        display: grid;
+        justify-content: center;
+    }
+    .second p{
+        padding: 20px;
+        display: grid;
+        justify-content: center;
+    }
+    .third{
+        font-size: 18px;
+        padding: 50px;
+        height: 40px;
+        /* width: 200px; */
+        display: grid;
+        transform: translateY(20px);
+        justify-content: center;
+        color: white;
+    }
+    .third p{
+        background-color: rgb(75, 184, 231);
+        border-radius: 6px;
+        padding: 15px;
+        align-content: center;
+    }
+    .middle{
+        display: flex;
+        justify-content: center;
+        vertical-align: baseline;
+    }
+    .middle img{
+        transform: translateX(-220px);
+    }
+    .upper{
+        font-size: 22px;
+        transform: translateX(-200px);
+    }
+    .lower{
+        /* text-align: center; */
+        font-size: 17px;
+        transform: translateX(-180px);
+    }
+    .container .items a img {
+        transform: translateY(4px);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="items item-1">
+            <img src="UE-Logo-1.webp" alt="">
+        </div>
+        <div class="items item-2">Products 
+            <a href="">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-keyboard-down-arrow-1780093-1518654.png?f=webp" width="20px" height="20px" >
+                </a>
+        </div>
+        <div class="items item-3">Pricing
+            <a href="">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-keyboard-down-arrow-1780093-1518654.png?f=webp" width="20px" height="20px">
+                </a>
+        </div>
+        <div class="items item-4">Resources
+            <a href="">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-keyboard-down-arrow-1780093-1518654.png?f=webp" width="20px" height="20px">
+                </a>
+        </div>
+        <div class="items item-5">About us
+            <a href="">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-keyboard-down-arrow-1780093-1518654.png?f=webp" width="20px" height="20px">
+                </a>
+        </div>
+        <div class="items item-6">Security and Compliance
+            <a href="">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-keyboard-down-arrow-1780093-1518654.png?f=webp" width="20px" height="20px">
+                </a>
+        </div>
+ 
+        
+    </div>
+
+    <div class="heading">
+        <span class="first">
+            Download<h4>UltraEdit</h4>for Windows
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" width="110px" height="35px">
+        </span>
+        <br>
+        <span class="second">
+            Download and try UltraEdit before you buy it! This download includes the full Windows <p>
+                version of the text editor.
+            </p>
+        </span>
+        <span class="third">
+            <p>DOWNLOAD MAC OR LINUX VERSION</p>
+            </span>
+    </div>
+
+    <div class="middle">
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_logo_icon_white.png" width="50px">
+        <span class="upper"> Download UltraEdit</span>
+        <span class="lower">v2024.0(released 04/19/2024) | Hotfix </span>
+    </div>
+
+
+
+    <div class="main">
+        <div class="box box-1"><h3>English</h3> <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-2"><h3> Deutsch</h3> German <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-3"><h3>Italy</h3> ItalianItaliano Italian <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-4"><h3>Español</h3> Spanish <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-5"><h3>français</h3>French <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-6"><h3>Português</h3> brasileiro Brazilian Portuguese <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-7"><h3>日本</h3> Japanese <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-8"><h3>한국어</h3>Korean <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-9"><h3>中国</h3>Chinese <a href="ue_english_64.exe">Download 64-Bit</a></div>
+        <div class="box box-10"><h3>中國</h3> Traditional Chinese <a href="ue_english_64.exe">Download 64-Bit</a></div>
+    </div>
+</body>
+</html>

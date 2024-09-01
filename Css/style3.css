@@ -1,0 +1,109 @@
+.yes{
+    color: aquamarine;
+}
+div{
+    background-color: aqua !important;
+}
+/* *{
+    color: brown;
+} */
+.nice{
+    color: black;
+}
+h1{
+    color: blue;
+}
+#hmm{
+    color: red;
+    text-align: center; 
+    /* for putting it in centre */
+
+}
+/* example of attribute selector */
+[data-x=a]{
+    background-color: yellow;
+}
+/* priority
+1) id
+2) bottom most class
+3) then tag
+means if same selector is there than the bottommost is having the highest priority */
+
+/* Inline Style>ID(#) selector>Class(.) or attribute selector>Element(h1 or p or...) selector>Universal(*) selector */
+
+/* attribute selector -> data-x="a" */
+
+/* universal ko element selector kar lega change,element ko class,class ko id selector,id ko inline style */
+/* inline style ko rechange sirf important tag se he hoga */
+
+
+/* specificity calculations
+universal selector = 0
+element selector = 1
+class selector / attribute selector / pseudo class = 10
+id selector = 100
+inline stylr = 1000
+important laga diya kahi bhi to specificity = 10000
+*/
+
+h1.nice{
+    color: aqua;
+} /* Now the specificity got added = 1 + 10 = 11 hence it is more than a class selector or attribute selector */
+
+.hello{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1500px; */
+    width: 80vw;
+    margin: 22px auto;
+    height: 25vh;
+    font-size: 35px;
+}
+/* vh means height percentage of view and
+vw means width percentage of view */
+.new{
+    box-sizing: border-box;
+    border: 2px solid black;
+    /* width: 1500px; */
+    width: 80vw;
+    margin: 22px auto;
+    /* height: 65vh; */
+    min-height: 80px;
+    font-size: 35px;
+}
+*{
+    padding: 0;
+    margin:0;
+}
+.another{
+    /* color: white; */
+    background-color: black;
+    border: 2px solid black;
+    font-size: 50px;
+    /* height: 100vmin; */
+    width: 80vw;
+    /* margin:70px; */
+    margin: 22px auto;
+}
+/* em -> size ka utna times hojayega or vo font size ho jayega uska
+/* rem -> root ka utna times font size hojayega */
+/* vmin -> vh for laptop , vw for mobile */
+/* vmax -> vw for laptop , vh for mobile */
+/* width:50% --> means parent ka 50%  */
+
+/* 
+*{
+    display: inline;   sabhi inline element ban chuke hai(aaju baaju aayenge)
+} */
+.classs{
+    margin: 20px;
+    font-size: 60px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px rgb(73, 65, 73);
+}
+li{
+    font-size: 50px;
+    list-style: devanagari;
+    background-color: yellow;
+    list-style-position: outside;
+}

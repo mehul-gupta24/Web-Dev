@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="description" content="This is about Code"> help for SEO -->
+    <title>My Code</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Hey this is HTML</h1>
+    <!-- <video src="production_id_4063585 (1080p).mp4" controls></video> -->
+    <!-- <script src="script.js"></script> -->
+    <!-- <h1>Hello i am Mehul</h1>
+    <h2>Hello i am Mehul</h2>
+    <h3>Hello i am Mehul</h3> -->
+    <!-- <p style ="color: orange">Lorem ipsum dolor sit amet.</p> -->
+    <!-- <a target="_blanl" href="https://www.google.com">Open Google</a> -->
+
+    <h2 style="color: rgb(193, 165, 165)">Primary Bookmarks</h2>
+    <a style="color: red" href="https://www.google.com">Google</a><br />
+    <a style="color: red" href="https://www.youtube.com">Youtube</a><br />
+    <a style="color: red" href="https://www.facebook.com">Facebook</a><br />
+    <a style="color: red" href="https://www.Twitter.com">Twitter</a><br />
+    <a style="color: red" href="https://www.codewithharry.com">Harry</a>
+
+    <h2 style="color: aqua">Secondary Bookmarks</h2>
+    <a style="color: blue" href="https://instagram.com">Instagram</a>
+    <br /><br />
+    <!-- <img width="800" height="500" src="train.jpeg" alt=""> -->
+
+    <table>
+        <caption>
+            Distinguish
+        </caption>
+        <tr>
+            <!-- tr->table row & td->table data -->
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td colspan="2">Mehul</td>
+            <td colspan="2">20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Mehul</td>
+            <td rowspan="2">20</td>
+        </tr>
+        <tr>
+            <td colspan="2">Mehul</td>
+        </tr>
+    </table>
+
+    <!-- list - unordered list -->
+    <ul type="square">
+        <li>Mehul</li>
+        <li>Shubham</li>
+    </ul>
+
+    <!-- list - ordered list -->
+    <ol type="I" start="4">
+        <li>Mehul</li>
+        <li>Shubham</li>
+    </ol>
+
+    <!-- forms  -->
+    <h4>Enter for freelancing</h4>
+
+    <form action="post">
+        <div>
+            <label for="Username">Enter your name</label>
+            <input type="text" id="Username" name="Username" placeholder="Enter" />
+        </div>
+        <div>
+            <label>Gender:</label><br />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="h" value="yes" />
+            <label for="h">Exercise</label>
+        </div>
+        <div>
+            <label for="Comment">Enter your Comment here . . . </label><br />
+            <textarea name="comment" placeholder="Comment here" id="Comment" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <select name="Fruits">
+                <option value="a">Apple</option>
+                <option value="b">Banana</option>
+                <option value="c">cherry</option>
+            </select>
+        </div>
+    </form>
+
+    <!-- Block and Inline element
+    block element - puri row ka size lete h(example para tag)
+    Inline element - limited size lee h (example a tag)-->
+    <p>Hello i am para</p>
+    <!-- p is a block element -->
+    <a href="https://google.com">Google</a>
+    <!-- anchor is a inline tag -->
+
+    <!-- inline elements help other inline elements to enter the row,while the block elements take full row as their own row and dont allow anyone to come in that particular row -->
+
+    <!-- Id and Classes attributes
+    Id is individuality so its different for different tags
+    but classes can be same and multiple also in each tag -->
+    <div id="red" class="firstclass">First</div>
+    <div id="blue" class="secondclass firstclass">gf</div>
+    <img src="train.jpeg" alt="" />
+    <br />
+    <video src="production_id_4063585 (1080p).mp4" muted controls loop height="400" width="800"
+        poster="train.jpeg"></video>
+    <audio src="audio.mp3" controls autoplay loop muted></audio>
+
+    <img src="image.svg" alt="" />
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=IHndlx0EjVaK1CfI&amp;start=791"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>What are semantic tags?</h1>
+    </main>
+
+    <footer>All Copyrights reserved</footer>
+
+    <!-- html entities -->
+    &lt;p&gt;&lt;/p&gt;
+    <!-- here this is used for printing exactly which can be print as a html tag -->
+    <br />
+
+    <!-- in pre tag,we print exact what is inside the pre tag,including spaces and spacing in lines -->
+    <pre>
+        hello i 
+
+    am Mehul Gupta from Mumbai
+
+    </pre>
+    <!-- symbol for copyright -->
+    &copy
+    <!-- for adding spaces in same line use &nbsp -->
+    &nbsp;hi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;helllo
+    <br />
+    <blockquote cite="source-url">quotation text here</blockquote>
+    <pre>
+        <code>
+            #include iostream
+            using namespace std;
+            int main(){
+                int a=5;
+                cout<<a;
+                return 0;
+            }
+        </code>
+    </pre>
+
+    <code>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+&lt;!-- &lt;meta name="description" content="This is about Code"&gt; help for SEO --&gt;
+&lt;title&gt;My Code&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css" /&gt;
+&lt;/head&gt;
+        </pre>
+    </code>
+</body>
+
+</html>
