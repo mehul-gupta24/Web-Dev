@@ -58,7 +58,17 @@ const some_print  = (num1,num2) =>{
     }
 }
 
-const add_two_num = (num1,num2) => (num1*num2)
+// const add_two_num = (num1,num2) => (num1*num2)
 
 // some_print(4,2);
-console.log(add_two_num(32,32));
+// console.log(add_two_num(32,32));
+
+// console.log("Hello everyone")
+// console.table([2,2,3])
+// // always use const or let
+// {
+//     var a=3;
+//     console.log(a)
+// }
+// a=a+3
+// console.log(a)
