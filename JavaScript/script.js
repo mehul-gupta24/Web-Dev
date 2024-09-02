@@ -87,3 +87,4 @@ const profile = {
 };
 console.log(profile);
 console.log(typeof profile.name);
+
