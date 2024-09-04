@@ -138,3 +138,5 @@ console.log(myDate.toLocaleString())
 
 // shallow copy - pass by reference - on heap 
 // deep copy - pass by value(do not share same reference points) - on stack 
+
+
