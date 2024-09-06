@@ -31,16 +31,16 @@
 // Shop.budget=Shop.budget+2000
 // console.log(Shop.budget)
 
-function mehul(){
-    // console.log(this)
-}
+// function mehul(){
+//     // console.log(this)
+// }
 // mehul()
 
-const print = function(){
-    for(let i=0;i<5;i++){
-        // console.log(i);
-    }
-}
+// const print = function(){
+//     for(let i=0;i<5;i++){
+//         // console.log(i);
+//     }
+// }
 // print()
 
 // const printt = () =>{
@@ -93,14 +93,14 @@ const print = function(){
 // console.log(typeof(bignumber))
 
 // object are those which are written in curly braces for example
-const myObject={
-    name:"Mehul Gupta",
-    age:22
-}
+// const myObject={
+//     name:"Mehul Gupta",
+//     age:22
+// }
 
-let myFun = function(){
+// let myFun = function(){
 // console.log("l");
-}
+// }
 // d3
 // myFun()
 // console.log(typeof(myFun))
@@ -144,11 +144,11 @@ let myFun = function(){
 // Objects
 // 1)singleton - Object.create
 // 2)object literals - 
-const JsUser={
-    name:"Mehul",
-    age:21,
-    class:12,
-}
+// const JsUser={
+//     name:"Mehul",
+//     age:21,
+//     class:12,
+// }
 // console.log(JsUser.name)
 // JsUser.name="rakhi";
 // console.log(JsUser.name)
@@ -185,8 +185,8 @@ const JsUser={
 // console.log(real_number.full_name.age)
 
 
-const obj1 = {name:"Amruta" ,gender:"female", vergin:true}
-const obj2 = {name:"Mehul",gender:"male",vergin:false}
+// const obj1 = {name:"Amruta" ,gender:"female", vergin:true}
+// const obj2 = {name:"Mehul",gender:"male",vergin:false}
 // const obj3 = Object.assign({},obj1,obj2)
 // console.log(obj1)
 // console.log(obj2)
@@ -197,10 +197,10 @@ const obj2 = {name:"Mehul",gender:"male",vergin:false}
 // console.log(obj2)
 // console.log(obj3)
 
-const a={
-    name:"mehul",
-    age:22,
-}
+// const a={
+//     name:"mehul",
+//     age:22,
+// }
 // console.log(Object.keys(a));
 // let arr=Object.keys(a)
 // for(let i=0;i<2;i++){
