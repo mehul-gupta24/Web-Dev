@@ -482,23 +482,23 @@ const a={
 // const newarr=arr.reduce((acc,curr)=>acc+curr,0)
 // console.log(newarr)
 
-const shoppingCart = [
-    {
-        itemName: "js course",
-        price: 2999
-    },
-    {
-        itemName: "py course",
-        price: 999
-    },
-    {
-        itemName: "mobile dev course",
-        price: 5999
-    },
-    {
-        itemName: "data science course",
-        price: 12999
-    },
-]
-const SumOfPrices=shoppingCart.reduce((acc,shopping)=>(acc+shopping.price),0)
-console.log(SumOfPrices)
+// const shoppingCart = [
+//     {
+//         itemName: "js course",
+//         price: 2999
+//     },
+//     {
+//         itemName: "py course",
+//         price: 999
+//     },
+//     {
+//         itemName: "mobile dev course",
+//         price: 5999
+//     },
+//     {
+//         itemName: "data science course",
+//         price: 12999
+//     },
+// ]
+// const SumOfPrices=shoppingCart.reduce((acc,shopping)=>(acc+shopping.price),0)
+// console.log(SumOfPrices)
