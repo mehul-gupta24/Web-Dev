@@ -7,7 +7,7 @@
 
 // Query Selector
 
-// document.querySelector('h1') 
+// document.querySelector('h1')
 //     - will give 1st h1 para inside full content 
 // document.querySelectorAll('p')
 //     - will give all p tag inside content
