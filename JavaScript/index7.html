@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM</title>
+</head>
+<body style="background-color: green;">
+    <ul class="language">
+        <li>
+            Javascript
+        </li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        // make.style.backgroundColor="red"
+        document.querySelector('.language').appendChild(li)
+        // in the above line , actually the append happens after the last line so it takes much time when big number of li are already there , because it has to traverse all the time to reach the bottom , so we have some other approach
+    }
+    // addLanguage("Python3")
+    // addLanguage("C++/11")
+
+    function addOptimizedLanguage(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        // appendchild is better than innerHTML
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimizedLanguage("python")
+
+    // Edit
+    const language=document.querySelector("li:nth-child(1)")
+    // language.innerHTML="c++"
+    // document.createElement('li').appendChild(language)
+    const neww=document.createElement('li')
+    neww.textContent="R"
+    language.replaceWith(neww)
+
+    //edit
+    const save=document.querySelector("li:first-child")
+    save.outerHTML='<li>Ruby</li>'
+
+    const another=document.querySelector("li:last-child")
+    another.remove()
+
+</script>
+</html>
