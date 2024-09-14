@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <style>
+        .box{
+            justify-content: space-evenly;
+            padding: 70px;
+        }
+        input{
+            margin: 34px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box box-1">Weight in Kg <input></input></div>
+        <br>
+        <div class="box box-2">Height in cm <input></input></div>
+        <br>
+        <div class="box box-3">Calculated BMI <input></input></div>
+    </div>
+</body>
+<script>
+    // submit event
+    const vary=document.querySelector('.cont')
+    vary.addEventListener('submit',function(e){
+        e.preventDefault()
+        const weight=parseInt(('.box-1').value)
+        const height=parseInt(('.box-2').value)
+        const calculated=parseInt(('.box-3'))
+        if(height=='' || height<0 || isNaN(height)){
+            calculated.innerHTML="Please give a valid height"
+        }
+        if(height=='' || height<0 || isNaN(height)){
+            calculated.innerHTML="Please give a valid weight"
+        }
+    })
+
+
+</script>
+</html>
