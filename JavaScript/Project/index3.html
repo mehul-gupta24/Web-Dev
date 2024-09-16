@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-3</title>
+</head>
+<style>
+    .no{
+        width: 100px;
+        height: 30px;
+        border-radius: 12px;
+        margin-top: 500px;
+        margin-left: 700px;
+        
+    }
+    .display{
+        width: 130px;
+        height: 50px;
+        background-color: orange;
+        margin-left: 700px;
+        border-radius: 12px;
+        text-align: center;
+        font-size: 34px;
+    }
+    </style>
+<body>
+    <div class="no">Today's Time</div>
+    <div class="display"></div>
+</body>
+<script>
+    const time=document.querySelector('.display')
+    setInterval(function(){
+        const date=new Date();
+        time.innerHTML=date.toLocaleTimeString();
+    },1000)
+</script>
+</html>

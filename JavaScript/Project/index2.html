@@ -5,40 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-2</title>
     <style>
-        .box{
-            justify-content: space-evenly;
-            padding: 70px;
-        }
         input{
             margin: 34px;
+        }
+        button{
+            margin-left: 100px;
         }
     </style>
 </head>
 <body>
-    <div class="cont">
-        <div class="box box-1">Weight in Kg <input></input></div>
-        <br>
-        <div class="box box-2">Height in cm <input></input></div>
-        <br>
-        <div class="box box-3">Calculated BMI <input></input></div>
-    </div>
+    <form action="">
+        <div class="cont">
+            <div>Weight in Kg <input type="text" id="weight"></div>
+            <br>
+            <div>Height in cm <input type="text" id="height"></div>
+            <br>
+            <button type="submit">Calculated BMI </button>
+            <div id="results"></div>
+            <div class="conclusion"></div>
+        </div>
+    </form>
 </body>
 <script>
     // submit event
-    const vary=document.querySelector('.cont')
-    vary.addEventListener('submit',function(e){
-        e.preventDefault()
-        const weight=parseInt(('.box-1').value)
-        const height=parseInt(('.box-2').value)
-        const calculated=parseInt(('.box-3'))
-        if(height=='' || height<0 || isNaN(height)){
-            calculated.innerHTML="Please give a valid height"
+    // const vary=document.querySelector('.cont')
+    // vary.addEventListener('submit',function(e){
+    //     e.preventDefault()
+    //     const weight=parseInt(('.box-1').value)
+    //     const height=parseInt(('.box-2').value)
+    //     const calculated=parseInt(('.box-3'))
+    //     if(height=='' || height<0 || isNaN(height)){
+    //         calculated.innerHTML="Please give a valid height"
+    //     }
+    //     if(height=='' || height<0 || isNaN(height)){
+    //         calculated.innerHTML="Please give a valid weight"
+    //     }
+    // })
+    const form=document.querySelector('form')
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        const weight=parseInt(document.querySelector('#weight').value);
+        const height=parseInt(document.querySelector('#height').value);
+        const results=document.querySelector('#results')
+        if(weight=='' || weight<0 || isNaN(weight)){
+            results.innerHTML=`Please provide a valid weight ${weight}`;
         }
-        if(height=='' || height<0 || isNaN(height)){
-            calculated.innerHTML="Please give a valid weight"
+        else if(height=='' || height<0 || isNaN(height)){
+            results.innerHTML=`Please provide a valid height ${height}`;
         }
+        else{
+            const bmi=(weight*10000/(height*height)).toFixed(2);
+            results.innerHTML=`<span>${bmi}</span>`;
+            if(bmi>20){
+                const con=document.querySelector('.conclusion')
+                con.innerHTML=`your bmi is normal`;
+            }
+        }
+
     })
-
-
 </script>
 </html>
