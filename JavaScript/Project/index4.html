@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project4</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 28px;
+            color: rgb(222, 119, 119);
+            font-size: 28px;
+            background-color: black;
+        }
+        
+        .guess{
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 28px;
+            font: bold;
+            background-color: AQUA;
+        }
+        #write{
+            height: 30px;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        #submit{
+            margin-left: 50px;
+        }
+        .write{
+            display: flex;
+        }
+        .chance{
+            margin: 0px 5px 0px 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="home">Home</div>
+        <div class="home">About</div>
+    </nav>
+    <form action="">
+        <div class="guess">Guess a Number from 1 to 100</div>
+        <input id="write" type="text" placeholder="Input">
+        <input id="submit" type="submit">
+    </form>
+    <br>
+    <div class="old-guess">
+    </div>
+    <br>
+    <div class="write">
+        You have <div class=" chance "> 10 </div> chance to guess
+    </div>
+</body>
+<script>
+    const submit=document.querySelector('#submit')
+    const old_guess=document.querySelector('.old-guess')
+    const rem_chance=document.querySelector('.chance')
+    submit.addEventListener(function(e){
+        let a=parseInt(Math.random()*100+1);
+        if(a==submit){
+
+        }
+        else{
+
+        }
+    })
+    mehul
+</script>
+</html>
