@@ -8,16 +8,63 @@
 <style>
     
 </style>
-<body style="background-color: black;">
+<body style="background-color: black; color: aqua;">
+    <h2>
+        Amazing image
+    </h2>
     <div>
-        <li>
-            <ul>
-                helo
-            </ul>
-        </li>
+        <ul id="first">
+            <!-- <a onclick="alert('owl')">
+                Hello
+            </a> -->
+
+            <li id="owl">
+                Hello
+            </li>
+            <li id="Mehul">
+                Best Boy
+            </li>
+            <li id="a">
+                How are you
+            </li>
+        </ul>
     </div>
+    <a id="google" style="font-size: 30px;" href="https://google.com">Google</a>
+
 </body>
 <script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert('Hello')
+    // }
+    // document.getElementById('first').onclick=function(){
+    //     // alert('the first and outer loop')
+    //     console.log("2")
+    // }
+    // document.getElementById('Mehul').onclick=function(e){
+    //     // e - event object
+
+    //     // alert('Hello Mehul')
+    //     console.log("1")
+    //     e.stopPropagation() // for stoppping the propogation to outside event ,means it stops the bubble , from going up
+    // }
+    // document.getElementById('Mehul').addEventListener('click',function(){
+    //     alert('d')
+    // })
+    // document.getElementById('Mehul').addEventListener('click',function(){
+    //     alert('d')
+    // },true)
+
+    // false - event bubblling - from bottom to top - means 1st inside event will be done than the outer event
+    // true - event capturing - from top to bottom - means 1st outside event will be done than the inside event
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault()
+    //     console.log("Google clicked");
+    // },false)
+    
+    document.querySelector('#first').addEventListener('click',function(e){
+        
+    })
 
 </script>
 </html>
