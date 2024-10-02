@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Chai With Javascript</h1>
+    <button id="start">Start</button><br>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    // setTimeout(function(){
+    //     console.log("Mehul")
+    // },1000)
+
+
+    // setInterval(function(){
+    //     console.log("Mehul")
+    // },1000)
+
+    // can be done in this way also 
+    // const set=function(){
+    //     console.log("Mehul")
+    // }
+    // clearInterval(s,3000)
+    document.querySelector('#start').addEventListener('click',function(){
+        const s=setInterval(function(){
+            console.log("Mehul")
+        })
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval()
+    })
+
+</script>
+</html>

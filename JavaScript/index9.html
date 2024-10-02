@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Async Code Project</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+    <button id="stop">Stop</button>
+
+</body>
+
+<script>
+    // Javascript - synchronous
+            //    - single threaded (means slow lang , comp to multi threaded language)
+    // setInterval()
+    // console.log("Gupta")
+    // setTimeout(function(){console.log("Mehul Gupta")},200)
+    // console.log("Baniya")
+    // here gupta then baniya is printed instead of Mehul gupta because of the set timeout is given to other source and not on call stack
+
+
+    const Mehul=function(){
+        console.log("Hello world")
+        console.log("Hello ")
+    }
+    const change_title=function(){
+        document.querySelector('h1').innerHTML="Mehul Gupta"
+    }
+    const set=setTimeout(change_title,2000)
+    setTimeout(Mehul,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(set)
+        console.log("Stopped")
+    })
+
+</script>
+</html>
