@@ -26,13 +26,39 @@
     //     console.log("Mehul")
     // }
     // clearInterval(s,3000)
+
+    // document.querySelector('#start').addEventListener('click',function(){
+    //     const s=setInterval(function(){
+    //         console.log("Mehul")
+    //     })
+    // })
+    // document.querySelector('#stop').addEventListener('click',function(){
+    //     clearInterval()
+    // })
+
+    const random_color=function(){
+        const num="0123456789ABCDEF";
+        let color="#"
+        for(let i=0;i<6;i++){
+            color+=num[Math.floor(Math.random()*16)]
+        }
+        return color;
+    }
+    let changing_color;
+    let i=0;
     document.querySelector('#start').addEventListener('click',function(){
-        const s=setInterval(function(){
-            console.log("Mehul")
-        })
+        if(changing_color==null){
+            changing_color=setInterval(function(){
+                document.body.style.backgroundColor=random_color()
+                console.log(i);
+                i=i+1;
+            },500)
+            
+        }
     })
     document.querySelector('#stop').addEventListener('click',function(){
-        clearInterval()
+        clearInterval(changing_color)
+        changing_color=null;
     })
 
 </script>
