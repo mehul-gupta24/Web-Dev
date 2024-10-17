@@ -41,17 +41,56 @@
     //     console.log(user);
     // })
 
-    const promiseFour=new Promise(function(resolve,reject){
-        let error=true;
-        if(!error){
-            resolve({username:"mehul2409",password:"2309"})
-        }
-        else{
-            reject('Error : encountered')
-        }
+    // const promiseFour=new Promise(function(resolve,reject){
+    //     let error=true;
+    //     if(!error){
+    //         resolve({email:"mehul2409@gmail.com",password:"mehul24."})
+    //     }
+    //     else{
+    //         reject('Error : encountered')
+    //     }
+    // })
+    // // promiseFour.then((user)=>{
+    // //     console.log(user.username);
+    // // }).catch()
+    // promiseFour.then((user)=>{
+    //     console.log(user.email);
+    //     return user.password;
+    // }).then((important)=>{
+    //     //important has password of user
+    //     console.log(important);
+    //     console.log(password);
+    // }).catch((str)=>{
+    //     console.log(str);
+    // }).finally(()=>{console.log("The promise is either resolved or rejected");})
+    // // this is chaining , means value from 1st then is shared to second then
+
+
+    const promiseFive=new Promise(function(resolve,reject){
+        setTimeout(()=>{
+            let error=true;
+            if(error){
+                resolve({username:"Javascript",password:"mehul"})
+            }
+            else{
+                reject('ERROR : JS went wrong')
+            }
+        },1000)
     })
-    promiseFour.then((user)=>{
-        console.log(user.username);
-    }).catch()
+    async function consumePromiseFive(){
+        try{
+            const response=await promiseFive
+            console.log(response)
+        }
+        catch(error){
+            console.log(error);
+        }
+    }
+    // fetch('https://api.github.com/users/hiteshchoudhary').then((response) => {
+    //     return response.json()
+    // }).then((data) => {
+    //         console.log(data);
+    // }).catch((error) => console.log(error))
+
 </script>
 </html>
